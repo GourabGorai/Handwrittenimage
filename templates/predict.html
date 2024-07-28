@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <title>Predict Character</title>
+</head>
+<body>
+    <h1>Predict Character</h1>
+    {% if error %}
+    <p>Error: {{ error }}</p>
+    {% endif %}
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button type="submit">Upload and Predict</button>
+    </form>
+    <a href="/">Go Back</a>
+</body>
+</html>

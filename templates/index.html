@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+</head>
+<body>
+    <h1>Upload Image and Enter Text</h1>
+    <form action="{{ url_for('upload_image') }}" method="post" enctype="multipart/form-data">
+        <label for="image">Select image:</label>
+        <input type="file" id="image" name="image" accept="image/*" required><br><br>
+        <label for="text">Enter text:</label>
+        <textarea id="text" name="text" required></textarea><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
