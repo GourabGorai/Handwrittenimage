@@ -9,7 +9,7 @@ app = Flask(__name__)
 # Ensure the upload folder exists
 UPLOAD_FOLDER = 'uploads'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
-CSV_FILE = 'ImageData.csv'
+CSV_FILE = 'D:\\ATOM\\ImageData.csv'
 
 # Ensure the CSV file exists and create header if not present
 if not os.path.isfile(CSV_FILE):
